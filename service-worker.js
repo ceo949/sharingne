@@ -1,5 +1,5 @@
 /* SharingNE service worker — installazione, uso offline, ricezione file condivisi */
-const CACHE = 'sharingne-v1';
+const CACHE = 'sharingne-v2';
 const ASSETS = [
   './', './index.html', './manifest.json',
   './qrcode-generator.min.js', './pako.min.js', './jsQR.min.js',
