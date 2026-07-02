@@ -221,7 +221,7 @@
     if(peer){ try{ peer.destroy(); }catch(e){} }
     peer = new Peer({ debug:1 });
     peer.on('open', () => {
-      const c = peer.connect(PREFIX + code, { reliable:true, serialization:'none' });
+      const c = peer.connect(PREFIX + code, { reliable:true });
       bindConn(c);
     });
     peer.on('error', e => {
