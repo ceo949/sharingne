@@ -2,9 +2,9 @@
 const CACHE = 'sharingne-v1';
 const ASSETS = [
   './', './index.html', './manifest.json',
-  './vendor/qrcode-generator.min.js', './vendor/pako.min.js', './vendor/jsQR.min.js',
-  './icons/icon-192.png', './icons/icon-512.png',
-  './icons/apple-touch-icon.png', './icons/favicon-32.png'
+  './qrcode-generator.min.js', './pako.min.js', './jsQR.min.js',
+  './icon-192.png', './icon-512.png',
+  './apple-touch-icon.png', './favicon-32.png'
 ];
 
 self.addEventListener('install', e => {

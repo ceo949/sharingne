@@ -1,0 +1,53 @@
+<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#17273f"/><stop offset="1" stop-color="#0b131f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="28%" r="70%">
+      <stop offset="0" stop-color="#20405c" stop-opacity=".8"/><stop offset="1" stop-color="#0b131f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="dev" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f3757"/><stop offset="1" stop-color="#152538"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#35e0c8"/><stop offset="1" stop-color="#7af0dd"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="230" fill="url(#tile)"/>
+  <rect width="1024" height="1024" rx="230" fill="url(#glow)"/>
+  <rect x="8" y="8" width="1008" height="1008" rx="224" fill="none" stroke="#ffffff" stroke-opacity=".06" stroke-width="2"/>
+  
+  <!-- dashed wire echo -->
+  <path d="M330 640 Q512 470 700 330" fill="none" stroke="#284560" stroke-width="12"
+        stroke-linecap="round" stroke-dasharray="2 30"/>
+
+  <!-- PC / monitor (lower-left) -->
+  <g>
+    <rect x="150" y="536" width="304" height="212" rx="30" fill="url(#dev)" stroke="#3a5a7d" stroke-width="4"/>
+    <rect x="178" y="564" width="248" height="156" rx="14" fill="#0c1826"/>
+    <circle cx="214" cy="690" r="7" fill="#35e0c8" fill-opacity=".6"/>
+    <rect x="284" y="748" width="36" height="34" fill="#2a4664"/>
+    <rect x="226" y="780" width="152" height="22" rx="11" fill="#33506f"/>
+  </g>
+
+  <!-- iPhone (upper-right) -->
+  <g>
+    <rect x="628" y="184" width="172" height="290" rx="46" fill="url(#dev)" stroke="#3a5a7d" stroke-width="4"/>
+    <rect x="650" y="212" width="128" height="234" rx="28" fill="#0c1826"/>
+    <rect x="690" y="226" width="48" height="14" rx="7" fill="#22405c"/>
+    <rect x="686" y="424" width="56" height="7" rx="3.5" fill="#22405c"/>
+  </g>
+
+  <!-- leaping-file arc: molto meno evidente (niente alone, sottile e semitrasparente) -->
+  <path d="M360 610 Q512 430 690 300" fill="none" stroke="url(#arc)" stroke-width="8"
+        stroke-linecap="round" stroke-opacity=".26"/>
+
+  <!-- file chip in flight: resta visibile, elemento focale -->
+  <g transform="translate(516 452) rotate(-38)">
+    <rect x="-40" y="-52" width="80" height="104" rx="18" fill="#0b131f" stroke="#7af0dd" stroke-width="9"/>
+    <rect x="-40" y="-52" width="80" height="104" rx="18" fill="#35e0c8" fill-opacity=".16"/>
+    <path d="M16 -52 v30 h30" fill="none" stroke="#7af0dd" stroke-width="9" stroke-linejoin="round"/>
+    <line x1="-18" y1="6" x2="18" y2="6" stroke="#7af0dd" stroke-width="8" stroke-linecap="round"/>
+    <line x1="-18" y1="28" x2="6" y2="28" stroke="#7af0dd" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>
