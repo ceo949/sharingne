@@ -1,5 +1,5 @@
 /* SharingNE service worker — installazione, uso offline, ricezione file condivisi */
-const CACHE = 'sharingne-v4';
+const CACHE = 'sharingne-v5';
 const ASSETS = [
   './', './index.html', './manifest.json',
   
