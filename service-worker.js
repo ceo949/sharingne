@@ -1,8 +1,8 @@
 /* SharingNE service worker — installazione, uso offline, ricezione file condivisi */
-const CACHE = 'sharingne-v3';
+const CACHE = 'sharingne-v4';
 const ASSETS = [
   './', './index.html', './manifest.json',
-  './qrcode-generator.min.js', './pako.min.js', './jsQR.min.js',
+  
   './icon-192.png', './icon-512.png',
   './apple-touch-icon.png', './favicon-32.png'
 ];
